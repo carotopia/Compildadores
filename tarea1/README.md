@@ -1,5 +1,5 @@
 
-# Data Structures implementadas ien Go
+# Data Structures implementadas en Go
 
 
 ## Casos de prueba
