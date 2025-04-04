@@ -21,11 +21,11 @@ fmt.Println(stack.Items) // Output: [1, 2]
 q.Enqueue(2)
 q.Enqueue(3)
 q.Enqueue(4)
-fmt.Println(q) // Output: Queue with elements [2, 3, 4]
+fmt.Println(q) // Output:   [2, 3, 4]
 
 item, _ := q.Dequeue()
 fmt.Println(item) // Output: 2
-fmt.Println(q) // Output: Queue with elements [3, 4]
+fmt.Println(q) // Output:  [3, 4]
 ```
 
 ### HashMap
@@ -33,7 +33,7 @@ fmt.Println(q) // Output: Queue with elements [3, 4]
 h.Put("key1", 1)
 h.Put("key2", 2)
 h.Put("key3", 3)
-fmt.Println(h) // Output: HashMap with stored key-value pairs
+fmt.Println(h) 
 
 value, exists := h.Get("key1")
 if exists {
@@ -41,7 +41,7 @@ if exists {
 }
 
 h.Remove("key1")
-fmt.Println(h) // key1 removed from HashMap
+fmt.Println(h) // key1 eliminada
 ```
 
 
