@@ -1,42 +1,41 @@
-program BabyDuckProgram;
+program BabyDuckProgram2;
 
- var x, y, z : int;
- a, b : float;
+var m, n, p : int;
+u, v : float;
 
- void myFunction(a: int, b: int) [
-     var c : int;
-     {
-         c = a + z;
-         print("Result is", c);
-     }
- ];
+void computeSum(m: int, n: int) [
+    var result : int;
+    {
+        result = m + n;
+        print("Sum is", result);
+    }
+];
 
- void noParamFunction() [
-     {
-         print("No parameters");
-     }
+void greet() [
+    {
+        print("Hello from greet!");
+    }
+];
 
- ];
+main {
+    m = 8;
+    n = 15;
+    p = m * (n - 5) + 2;
+    u = 1.23;
+    v = 4.56;
 
- main {
-     x = 5;
-     y = 10;
-     z = x + y * (3 - 1);
-     a = 3.14;
-     b = 2.71;
+    if (p < 100) {
+        print("p is less than 100");
+    } else {
+        print("p is greater or equal to 100");
+    };
 
-     if (x > y) {
-         print("x is greater");
-     } else {
-         print("y is greater or equal");
-     };
+    while (n > 0) do {
+        n = n - 3;
+        print(n);
+    };
 
-     while (x < 20) do {
-         x = x + 1;
-         print(x);
-     };
-
-     myFunction(x, a);
-     noParamFunction();
- }
- end
+    computeSum(m, n);
+    greet();
+}
+end
