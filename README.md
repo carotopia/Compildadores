@@ -1,4 +1,4 @@
-# Baby Duck
+
 # BabyDuck Language
 
 ## Project Structure
