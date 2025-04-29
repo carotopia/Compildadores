@@ -1,0 +1,42 @@
+program BabyDuckProgram;
+
+ var x, y, z : int;
+ a, b : float;
+
+ void myFunction(a: int, b: int) [
+     var c : int;
+     {
+         c = a + z;
+         print("Result is", c);
+     }
+ ];
+
+ void noParamFunction() [
+     {
+         print("No parameters");
+     }
+
+ ];
+
+ main {
+     x = 5;
+     y = 10;
+     z = x + y * (3 - 1);
+     a = 3.14;
+     b = 2.71;
+
+     if (x > y) {
+         print("x is greater");
+     } else {
+         print("y is greater or equal");
+     };
+
+     while (x < 20) do {
+         x = x + 1;
+         print(x);
+     };
+
+     myFunction(x, a);
+     noParamFunction();
+ }
+ end
