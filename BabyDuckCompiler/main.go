@@ -8,7 +8,7 @@ import (
 	"BabyDuckCompiler/parser"
 )
 
-// Custom error listener para capturar errores de parsing
+
 type syntaxErrorListener struct {
 	*antlr.DefaultErrorListener
 }
@@ -17,7 +17,7 @@ func (l *syntaxErrorListener) SyntaxError(recognizer antlr.Recognizer, offending
 	line, column int, msg string, e antlr.RecognitionException) {
 
 	fmt.Printf("Syntax error at line %d:%d - %s\n", line, column, msg)
-	os.Exit(1) // termina el programa si hay un error de sintaxis
+	os.Exit(1) 
 }
 
 func main() {
@@ -38,7 +38,7 @@ func main() {
 
 	p := parser.NewBabyDuckParser(stream)
 
-	// Reemplazar el listener de errores por uno personalizado
+	
 	p.RemoveErrorListeners()
 	p.AddErrorListener(&syntaxErrorListener{})
 
